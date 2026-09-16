@@ -29,20 +29,20 @@ The Supabase CLI is essential for managing your Supabase projects locally and de
 
 1. If you don't have Scoop installed, install it first:
 
-   ```powershell
+   ```Powershell
    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
    irm get.scoop.sh | iex
    ```
 
 2. Add the Supabase bucket and install the CLI:
 
-   ```powershell
+   ```Powershell
    scoop bucket add supabase https://github.com/supabase/scoop-bucket.git
    scoop install supabase
    ```
 
 3. Verify the installation:
-   ```powershell
+   ```Powershell
    supabase --version
    ```
 
@@ -224,17 +224,17 @@ keytool -list -v \ -keystore ~/.android/debug.keystore \ -alias androiddebugkey 
 6. Paste the SHA-1 fingerprint
 7. Click **Create** and copy the Client ID
 
-**For Windows Powershell:**
+**For Windows PowerShell:**
 > **Note:** `%USERPROFILE%` does not expand in PowerShell.
 > Use the full path instead.
 
 Step 1 - Create .android folder if it doesn't exist:
-```bash
+```powershell
 mkdir C:\Users\YOUR_USERNAME\.android
 ```
 
 Step 2 - Generate keystore:
-```bash
+```powershell
 keytool -genkey -v `
   -keystore C:\Users\YOUR_USERNAME\.android\debug.keystore `
   -alias androiddebugkey `
@@ -243,7 +243,7 @@ keytool -genkey -v `
   -dname "CN=Android Debug,O=Android,C=US"
 ```
 Step 3 - Get SHA1 fingerprint:
-```bash
+```powershell
 keytool -list -v `
   -keystore C:\Users\YOUR_USERNAME\.android\debug.keystore `
   -alias androiddebugkey `
